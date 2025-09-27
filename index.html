@@ -50,12 +50,13 @@
 		
 
 			/* Responsive styles */
-                @media screen and (max-width: 620px) {
-                .btn-table { width:100% !important; }        /* centers wrapper on narrow screens */
-                .btn { display:block !important;
-                        margin:0 auto !important;             /* hard-center the button */
-                        width:auto !important; }              /* avoid odd fixed widths */
-                }
+             @media screen and (max-width: 620px) {
+            .container { width:100% !important; }        /* keep the 600px table fluid */
+            .btn-table { margin:0 auto !important; }     /* center the wrapper only */
+            .btn { display:inline-block !important;      /* don't stretch */
+                    margin:0 auto !important;
+                    width:auto !important; }              /* prevent full-width */
+            }
 
            
 
@@ -109,23 +110,25 @@
 
             <!-- Centered button (spacious tap target) -->
             <tr>
-                <td align="center" style="padding:0 24px 24px 24px;">
-                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" class="btn-table" style="margin:0 auto;">
-                    <tr>
-                        <td align="center">
-                        <a href="#"
-                            class="btn"
-                            style="display:block; margin:0 auto; background:#eab308; color:#111827; text-decoration:none !important;
-                                    font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px;
-                                    padding:16px 24px; border-radius:8px; min-width:260px; text-align:center;">
-                            Shop new styles for fall
-                        </a>
-                        </td>
-                    </tr>
-                    </table>
-                    <div style="line-height:24px; height:24px;">&zwnj;</div>
-                </td>
+            <td align="center" style="padding:0 24px 24px 24px;">
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0"
+                    align="center" class="btn-table" style="margin:0 auto;">
+                <tr>
+                    <td align="center">
+                    <a href="#"
+                        class="btn"
+                        style="display:inline-block; margin:0 auto; background:#eab308; color:#111827; text-decoration:none !important;
+                                font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px;
+                                padding:16px 24px; border-radius:8px; min-width:260px; text-align:center;">
+                        Shop New Styles for Fall!
+                    </a>
+                    </td>
                 </tr>
+                </table>
+                <div style="line-height:24px; height:24px;">&zwnj;</div>
+            </td>
+            </tr>
+
 
             <!-- Background image + text (simple) -->
             <tr>
