@@ -50,91 +50,109 @@
 		
 
 			/* Responsive styles */
+            @media screen and (max-width: 620px) {
+            .container { width: 100% !important; }
+            .p-24 { padding: 16px !important; }
+            img.responsive { width: 100% !important; height: auto !important; }
+            .btn { display: block !important; width: 100% !important; }
+            }
+
 	
 		</style>
 	</head>
-	<body id="body" style="margin: 0 !important; padding: 0 !important; background: #f2f4f7;">
+        <body id="body" style="margin: 0 !important; padding: 0 !important; background: #f2f4f7;">
+    <!-- Outer wrapper (full width) -->
+    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background:#f2f4f7;">
+        <tr>
+        <td align="center" style="padding:32px 0;">
+            <!-- Inner fixed table (recommended 600px) -->
+            <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" class="container" style="width:600px; max-width:600px; background:#ffffff; border-collapse:collapse;">
+            
+            <!-- Logo -->
+            <tr>
+                <td align="center" style="padding:24px;">
+                <img src="images/streetwear logo.png" alt="My brand logo" width="120" style="display:block; border:0; outline:none; text-decoration:none; height:auto;">
+                </td>
+            </tr>
 
-	<div style="max-width: 640px; width: 100%; margin: 32px auto; padding: 0; " >
+            <!-- Headline -->
+            <tr>
+                <td align="center" style="padding:0 24px;">
+                <h1 style="margin:50px 0 40px; color:#111827; font-family:Arial, Helvetica, sans-serif;">New Styles for Fall!</h1>
+                </td>
+            </tr>
 
+            <!-- Hero (responsive) -->
+            <tr>
+                <td>
+                <img src="images/fall-collection.jpg" alt="Collection" width="600" class="responsive"
+                    style="display:block; width:100%; height:auto; border:0; line-height:0;">
+                </td>
+            </tr>
 
+            <!-- Body copy -->
+            <tr>
+                <td align="center" class="p-24" style="padding:24px;">
+                <p style="margin:0; font-size:14px; color:#111827; font-family:Arial, Helvetica, sans-serif; line-height:1.6;">
+                    Fall 25' gear just landed: dark tones, amber accents, and relaxed fits. Great quality fabrics,
+                    double stitched seams, everyday comfort. Limited run. No restocks! Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                </td>
+            </tr>
 
-	  <!-- Logo image -->
+            <!-- Centered button (spacious tap target) -->
+            <tr>
+                <td align="center" style="padding:0 24px 24px 24px;">
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                    <td align="center">
+                        <a href="#"
+                        class="btn"
+                        style="display:inline-block; background:#eab308; color:#111827; text-decoration:none !important;
+                                font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px;
+                                padding:16px 24px; border-radius:8px;">
+                        Shop new styles for fall
+                        </a>
+                    </td>
+                    </tr>
+                </table>
+                <!-- extra space around button -->
+                <div style="line-height:24px; height:24px;">&zwnj;</div>
+                </td>
+            </tr>
 
+            <!-- Background image + text (simple) -->
+            <tr>
+                <td align="center"
+                    style="background:url('images/bg-text.jpg') center/cover no-repeat; padding:32px;">
+                <p style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#ffffff; font-weight:bold;">
+                    Weekly Drops • Limited Quantities
+                </p>
+                <p style="margin:8px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+                    Sign up for early access to Thursday night releases.
+                </p>
+                </td>
+            </tr>
 
-		<div style="text-align: center;" >  <!-- Used to center align logo-->
-     	<img src="images/streetwear logo.png"
-			alt="My brand logo" 
-			style="width: 120px;"
-			/>
-			</div>
-    
-		<!-- Headline -->
-			<div style="text-align: center;" > 
-		 <h1 style="margin:50px 0 40px;  color:#111827;" >
-			New Styles for Fall!
-		 </h1>
+            <!-- Footer -->
+            <tr>
+                <td align="center" style="padding:24px;">
+                <p style="margin:0; font-size:12px; color:#6b7280; font-family:Arial, Helvetica, sans-serif; line-height:1.6;">
+                    You received this email becuase you previously expressed interest in news and offers about our website
+                    by supplying your email address.
+                    <a href="#" style="color:#eab308; text-decoration: underline;">unsubscribe</a>
+                </p>
+                </td>
+            </tr>
 
-		 
-			
-			</div>
+            </table>
+        </td>
+        </tr>
+    </table>
+    </body>
 
-    
-    
-		<!-- Hero Image -->
-		 <div style="text-align: center;" > 
-		 <img src="images/fall-collection.jpg"
-		 		alt="Collection" width="auto"
-				
-				/>
-
-    
-		 </div>
-		<!-- Body copy -->
-		 <div style="text-align: center;" > 
-		<p style="margin: 30px; font-size: 14px; color: #111827;">
-			Fall 25' gear just landed: dark tones, amber accents, and relaxed fits. Great quality fabrics, 
-			double stitched seams,  everyday comfort. Limited run. No restocks!Lorem ipsum dolor sit amet, 
-			consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			Fall 25' gear just landed: dark tones, amber accents, and relaxed fits. Great quality fabrics, 
-			double stitched seams,  everyday comfort. Limited run. No restocks!Lorem ipsum dolor sit amet, 
-			consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			              
-		</p>
-
-		 </div>
-
-		<!-- Button -->
-
-		 <div style="text-align: center;" > 
-		<a href="#"
-			style="display: inline-block;margin-bottom: 15px; background: #eab308; color: #111827;
-			text-decoration: none !important;">  <!-- text decoration none turns off the underline for the link-->
-			Shop new styles for fall
-		</a>
-		</div>
-			
-
-    
-    
-		<!-- Footer information: Always include an unsubscribe link! -->
-
-		 <div style="text-align: center;" > 
-
-		<p style="margin: auto; font-size: 12px; color: #6b7280;" >
-			You received this email becuase you previously expressed interest in news and offers about our website
-			by supplying your email address. 
-			<a href="#" style="color:#eab308; text-decoration: underline;"> unsubscribe</a>
-		</p>
-		
-
-			
-	</div>
-	</body>
 </html>
