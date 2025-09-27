@@ -50,12 +50,14 @@
 		
 
 			/* Responsive styles */
-            @media screen and (max-width: 620px) {
-            .container { width: 100% !important; }
-            .p-24 { padding: 16px !important; }
-            img.responsive { width: 100% !important; height: auto !important; }
-            .btn { display: block !important; width: 100% !important; }
-            }
+                @media screen and (max-width: 620px) {
+                .btn-table { width:100% !important; }        /* centers wrapper on narrow screens */
+                .btn { display:block !important;
+                        margin:0 auto !important;             /* hard-center the button */
+                        width:auto !important; }              /* avoid odd fixed widths */
+                }
+
+           
 
 	
 		</style>
